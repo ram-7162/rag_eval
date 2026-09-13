@@ -1,3 +1,10 @@
+# pattern       meaning
+# ────────────────────────────────────
+# .env          name/pattern to ignore
+# .venv/        ignore a directory named .venv
+# __pycache__/  ignore a directory named __pycache__
+# *.pyc         ignore files ending in .pyc
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -8,4 +15,4 @@ wheels/
 
 # Virtual environments
 .venv
-.env/
+.env
