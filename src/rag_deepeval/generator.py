@@ -282,17 +282,24 @@ Answer:
 stream_prompt = ChatPromptTemplate.from_template(BASE_RULES + "\n\nAnswer:\n")
 
 
-structured_chain = structured_prompt | llm | parser
+# structured_chain = structured_prompt | llm | parser
 stream_chain = stream_prompt | llm | StrOutputParser()
+structured_chain = stream_prompt | llm | StrOutputParser()
 
 
 def generate(query: str, context: list[str]) -> str:
     """Generate a grounded answer, validated against AnswerSchema."""
     context_text = "\n\n".join(context)
-    result: AnswerSchema = structured_chain.invoke(
+    
+    # result : AnswerSchema = structured_chain.invoke(
+    #         {"question": query, "context": context_text}
+    #     )
+    # return result.answer
+
+    result = structured_chain.invoke(
         {"question": query, "context": context_text}
     )
-    return result.answer
+    return result
 
 
 def generate_stream(query: str, context: list[str]):

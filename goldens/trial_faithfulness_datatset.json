@@ -1,0 +1,35 @@
+[
+  {
+    "id": "f001",
+    "query": "what is vibe testing and why isn't it enough for deploying an llm app?",
+    "ideal_context": [
+      "coding, it is vibe testing. What is vibe testing? Look, I have written it here. Vibe testing means you casually trying an LLME application with a few prompts and judging it by feel. You asked 5 questions and read the answers. And judge based on the feel whether it is right or not. This is called vibe testing. So basically what you do is you ask 5-10 questions, the answer is right, you feel that it is working. It is informal, it is subjective, and it is usually not repeatable. Because today you asked 5 questions, after 10 days you won't ask the same 5 questions, you will ask something else. So it is not even repeatable. Now you must be understanding even after listening to vibe testing that it works only at the personal project level. By doing vibe testing, you don't make production grade software in the industry. Obviously. Right? Now I will tell you some instances, some case studies where teams made a mistake that they deployed a LLME based application by doing vibe testing. And I",
+      "applications. But if I ask the next question, have you ever evaluated it properly? Have you ever made an application or a chatbot? Have you ever evaluated it methodologically? So what would you say? I feel a lot of you will say that sir, I haven't evaluated it properly. But I asked him questions and I found the answer to it. So I assumed that this application is working properly. Right? Mostly we do this. What we do is we build an LLME-based application. Then before checking it, before launching it, before sharing it with someone, we ask the 4-5 questions that come to our mind at that point. And that's it. If the right responses come there, then we accept that our application is working properly. Actually, this whole phenomenon, this way of testing, this term has been given in the industry. It is called vibe testing. Just like vibe coding, it is vibe testing. What is vibe testing? Look, I have written it here. Vibe testing means you casually trying an LLME application with a few"
+    ],
+    "source_sessions": [
+      "1"
+    ]
+  },
+  {
+    "id": "f002",
+    "query": "what is the mmlu benchmark?",
+    "ideal_context": [
+      "but in MMLU Pro every question had 10 options so here you have to find the right answer but in 10 given options so you can see that the difficulty level increased after this what they did is they reduced the number of subjects from 57 they came down if I remember correctly they came down to 12 subjects and in 12 subjects they got 12k questions so per subject 1000 questions and they added some such questions which will give some reasoning so overall they made MMLU a little difficult so this for the next 1-2 years it was a good benchmark on which people kept testing their models basically MMLU Pro replaced MMLU but as it always happens that every next generation model beats the previous benchmark so over time what happened AGI eval also kind of saturated in GPQA also kind of near saturation and finally in 2025 a new benchmark came which is very popular and it is still used it's name is HLE Humanities Last Exam I can understand from the name how dangerous it is so in this people did that",
+      "came then when MMLU was saturated people thought that we should test it with breadth of knowledge so then GPQA came and people thought that MMLU is a good benchmark we should repair it so in the process of repairing MMLU Pro came then slowly AGI eval, GPQA and MMLU Pro when all three of them started to saturate then finally people thought that we should make a new benchmark in which we will keep breadth and depth and some more innovations so we will keep it and call it humanity's last exam and this benchmark is still going on and when truthfull QA was saturated then we replaced it with simple QA so in total there are seven benchmarks that we are going to discuss today MMLU, truthfull QA AGI eval, GPQA MMLU Pro, simple QA humanity's last exam these are the seven benchmarks that we will discuss in detail but I have already told you an evolution story that why all these benchmarks came in picture and when they came in picture so let me know if this discussion made sense to you or if you"
+    ],
+    "source_sessions": [
+      "5"
+    ]
+  },
+  {
+    "id": "f003",
+    "query": "how did mmlu pro improve on the original mmlu?",
+    "ideal_context": [
+      "so whatever problems were there in MM LU they tried to solve them let me tell you what things were solved the first change is that instead of giving 4 options in MCQ we give 10 options what will happen if we give 10 options according to you can you tell me if you are going to give one exam let's say IIT JEE or whatever other exams and instead of 4 options you get 10 options in every question so will your exam become more difficult or easy or I guess you can understand so we have given such exams and we try to eliminate options and reach the right option so when you have 4 options then elimination is easy you have to eliminate 3 and reach 1 when you have 10 then it will become very difficult so basically to increase the complexity researchers gave 10 options instead of 4 second, what they did is they removed the most basic questions and the noisy questions from MM LU and instead of them added reasoning based questions I will show you an example after a while but what did they do? MM LU",
+      "models are reaching humans in MMLU Pro there was no such human baseline in the paper they did not give it, whereas in the original MMLU, people criticized that the benchmark you have designed why are you not carrying the core philosophy that's it, it is not a big point shall we move to the next ok the next benchmark is interesting, in the sense that the benchmarks we discussed earlier are different in two aspects we will discuss both the aspects, before that I will tell you the story of this benchmark so if you remember, we discussed that everything started from MMLU one branch came out of it that take the exam like humans quickly tell us which benchmark was it, quick quiz in between just to check if you are retaining or not will anyone tell us which benchmark was it that said rather than creating new benchmarks why don't you use existing exams to check model intelligence or their knowledge which was it come on, no one remembers AGI well AGI well then who asked questions about"
+    ],
+    "source_sessions": [
+      "6"
+    ]
+  }
+]
