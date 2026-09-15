@@ -9,7 +9,7 @@ from deepeval.metrics import ContextualRecallMetric, ContextualPrecisionMetric
 from src.rag_deepeval.retriever import build_retriever
 from src.rag_deepeval.reranker import RerankingRetriever
 
-load_dotenv()
+
 from custom_llm import GroqModel
 load_dotenv()
 model = GroqModel()

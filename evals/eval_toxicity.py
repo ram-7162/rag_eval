@@ -5,12 +5,15 @@ from deepeval import evaluate
 from deepeval.test_case import LLMTestCase
 from deepeval.metrics import ToxicityMetric
 
-from src.rag_pipeline import RagPipeline
+from src.rag_deepeval.rag_pipeline import RagPipeline
 
 load_dotenv()
+from custom_llm import GroqModel
+model = GroqModel()
+
+JUDGE_MODEL = "openai/gpt-oss-20b"
 
 GOLDEN_PATH = "goldens/toxicity_goldens.json"
-JUDGE_MODEL = "gpt-4o-mini"
 THRESHOLD = 0.3
 
 

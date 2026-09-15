@@ -11,7 +11,6 @@ model = GroqModel()
 from src.rag_deepeval.retriever import build_retriever
 from src.rag_deepeval.reranker import RerankingRetriever
 from src.rag_deepeval.generator import generate
-load_dotenv()
 
 
 JUDGE_MODEL = "openai/gpt-oss-20b"

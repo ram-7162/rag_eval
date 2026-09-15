@@ -10,7 +10,6 @@ from src.rag_deepeval.rag_pipeline import RagPipeline
 
 load_dotenv()
 from custom_llm import GroqModel
-load_dotenv()
 model = GroqModel()
 
 JUDGE_MODEL = "openai/gpt-oss-20b"

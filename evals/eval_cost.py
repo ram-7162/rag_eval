@@ -28,8 +28,8 @@ AIMessage. Same prompt, same model, real retrieved context.
 # ============================================================
 from dotenv import load_dotenv
 
-from src.rag_pipeline import RagPipeline
-from src.generator import prompt, llm      # reuse the exact prompt + model
+from src.rag_deepeval.rag_pipeline import RagPipeline
+from src.rag_deepeval.generator import prompt, llm      # reuse the exact prompt + model
 
 load_dotenv()
 
