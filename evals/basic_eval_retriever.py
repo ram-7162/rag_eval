@@ -4,14 +4,15 @@ import json
 from deepeval import evaluate
 from deepeval.test_case import LLMTestCase
 from deepeval.metrics import ContextualRecallMetric, ContextualPrecisionMetric
-from custom_llm import GroqModel
-load_dotenv()
-model = GroqModel()
+
 
 from src.rag_deepeval.retriever import build_retriever
 from src.rag_deepeval.reranker import RerankingRetriever
 
 load_dotenv()
+from custom_llm import GroqModel
+load_dotenv()
+model = GroqModel()
 
 JUDGE_MODEL = "openai/gpt-oss-20b"
 GOLDEN_PATH = "goldens/trial_retriever_goldens.json"
